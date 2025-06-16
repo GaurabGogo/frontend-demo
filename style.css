@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .color-blue {
+  color: blue;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-xl {
+  font-size: 32px;
+} */
+
+/* #main-heading {
+  color: blue;
+  font-size: 32px;
+  text-align: center;
+} */
+
+/* [data-title] {
+  text-decoration: underline;
+}
+
+[data-title="Name of College"] {
+  font-size: 32px;
+  color: blue;
+}
+
+[data-title="description"] {
+  font-size: 12px;
+  color: blue;
+} */
+
+/* #main-heading {
+  font-size: 32px;
+  font-weight: 800;
+  color: blue;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  line-height: 1.2;
+}
+
+[data-description] {
+  font-size: 16px;
+  color: black;
+  line-height: 1.6;
+} */
+/* 
+#main-heading {
+  ba
+}
+
+#secondary-section {
+}
+
+.tertiary-section {
+}
+
+table {
+}
+
+body{
+  background-color: black;
+}
+
+.container{
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  color: gray;
+}
+
+
+.container{
+  text-align: center;
+} */
+
+body {
+  background-color: slategray;
+}
+
+/* h1 {
+  text-align: center;
+} */
+
+h1 {
+  background-color: green;
+  color: blue;
+}
+
+.primary h1 span {
+  color: red;
+}
+
+.primary {
+  background-color: green;
+  height: 2000px;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.secondary {
+  background: aqua;
+  height: 600px;
+}
+
+.container-1 {
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  border: 50px solid white;
+  padding: 40px;
+}
+
+/* .container-2 {
+  position: absolute;
+  right: 100px;
+  top: 0;
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  border: 50px solid white;
+  padding: 40px;
+  z-index: 1;
+} */

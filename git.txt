@@ -1,0 +1,35 @@
+GIT - Version Control
+
+What is Git?
+
+
+
+Git is a version control system that allows you to track changes in your code over time. It is a popular choice for software development because it allows multiple developers to work on the same project simultaneously, while keeping track of changes made by each developer.
+
+
+
+How does Git  
+
+git init - initialize a new git repository
+
+
+
+GItHUb
+gitlab
+bitbucket
+
+
+
+commands
+
+- git init 
+- git add .
+- git commit -m "commit message"
+- git status
+
+Branches
+- git branch -M side-branch
+- git checkout main
+
+Logs
+
