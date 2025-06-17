@@ -87,7 +87,7 @@ Typography(
 
 padding
 margin
-border
+border 2px solid / dashed red
 
 position
 - relative
@@ -102,6 +102,10 @@ top:
 bottom: 
 left: 
 right:
+
+
+border-radius:
+  
 
 
 
