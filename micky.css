@@ -29,18 +29,24 @@ body {
 .head {
   height: 100px;
   width: 100px;
-  background-color: black;
-  border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.face {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+}
+
 .ear {
-  height: 80px;
-  width: 30px;
-  background-color: gray;
+  height: 60px;
+  width: 60px;
+  background-color: black;
   border-radius: 50%;
 }
 
@@ -48,10 +54,54 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  transform: translate(-50%, -50%);
 }
 
 .ear-2 {
   position: absolute;
-  right: 0;
   top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.eye {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+.eye-1 {
+  top: 15%;
+  left: 10%;
+}
+
+.eye-2 {
+  top: 15%;
+  right: 10%;
+}
+
+.mouth {
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  z-index: 1;
+}
+
+.pupil {
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
