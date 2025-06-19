@@ -113,15 +113,80 @@ UNITS:
 - em - takes font size relative to nearest parent font-size
 - vh (viewport height)
 - vw (viewport width)
+- dvh (dynamic viewport height) - mobile screen
+- dvw (dynamic viewport width)
+
+box-shadow:
+
+background-color:
+background-image:
+background-position:
+background-size:
+background-repeat:
+
+z-index:
+
+display:
+
+float:
+clear:
+
+overflow:
 
 
 box-sizing 
-- border-box
-- content-box
+- border-box: content + padding + border
+- content-box: Content
+
+Content Box: Only the content Itself (additional Padding and Border added Will be added Outside the content)
+Border Box: margin + padding + content (doesn't exceed the specified height and width)
 
 
+pseudo-classes (:)
+  - targets element / tags state  
+  example : hover, active , focus, visited, link, visited, hover, focus, active, target, checked, disabled, enabled, selected, indeterminate, default, optional, required, invalid, in-range, out-of-range, read-only, read-write, required, valid, invalid, blur
+
+ - a:hover{
+
+ }
+
+pseudo-elements (::)
+  - targets part of element / tags directly
+
+  - p::first-line{
+
+  }
+
+  - ul::first-child{
+
+  }
+
+ - a::after{
+  content: ""
+  height: 
+  weight: 
+  background-color:
+ }
+
+ a::before{
+
+ }
+
+CSS - cascading style Sheet
 
 
+CSS Specificity
+  -  which styles are applied to an element
+
+CSS Selectors 
+  - > : direct child
+    + : sibling
+    * : all
+
+.class.class.class
+
+forms
+liner gradient
 
 
 
