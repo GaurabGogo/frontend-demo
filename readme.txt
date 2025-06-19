@@ -106,6 +106,18 @@ right:
 
 border-radius:
   
+UNITS:
+- %
+- px
+- rem - takes font size relative to browser set font-size
+- em - takes font size relative to nearest parent font-size
+- vh (viewport height)
+- vw (viewport width)
+
+
+box-sizing 
+- border-box
+- content-box
 
 
 
