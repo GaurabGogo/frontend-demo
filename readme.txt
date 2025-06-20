@@ -153,24 +153,24 @@ pseudo-classes (:)
 pseudo-elements (::)
   - targets part of element / tags directly
 
-  - p::first-line{
+  p::first-line{
 
   }
 
-  - ul::first-child{
+  ul::first-child{
 
   }
 
- - a::after{
+  a::after{
   content: ""
   height: 
   weight: 
   background-color:
- }
+  }
 
- a::before{
+  a::before{
 
- }
+  }
 
 CSS - cascading style Sheet
 
@@ -188,6 +188,16 @@ CSS Selectors
 forms
 liner gradient
 
+
+CSS Variables
+:root {
+  --variableName: 32px;
+  --variableColor: red;
+}
+
+h1 {
+  font-size: var(--variableName);
+}
 
 
 
