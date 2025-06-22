@@ -199,6 +199,16 @@ h1 {
   font-size: var(--variableName);
 }
 
+# Float VS Table Vs Flexbox
+
+Flexbox-
+  display: flex;
+  flex-direction: row | column | row-reverse | column-reverse;
+  justify-content: flex-start | flex-end | center | space-between | space-around;
+  align-items: flex-start | flex-end | center | baseline | stretch;
+
+
+
 
 
 
