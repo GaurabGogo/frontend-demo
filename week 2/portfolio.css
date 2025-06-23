@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: green;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.logo {
+  height: 4rem;
+  width: 4rem;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: red;
+}
+
+.body-container {
+  background-color: violet;
+  height: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  border: 2px solid transparent;
+  padding-bottom: 4px;
+  transition: all 0.3s;
+}
+
+ul li:hover {
+  border-bottom: 2px solid #fff;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", sans-serif;
+}
+
+.btn {
+  outline: none;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: transform 0.6s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.cta-btn {
+  background-color: blue;
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.primary-btn {
+  background-color: red;
+}
