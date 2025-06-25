@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: silver;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  outline-offset: 20px;
+  outline: 2px solid transparent;
+
+  animation-name: move;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation: move 10s 2s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+    background-color: blue;
+    outline-color: red;
+  }
+
+  80% {
+    transform: translateX(300px);
+    background-color: green;
+  }
+
+  100% {
+    transform: translateX(500px);
+  }
+}
