@@ -206,9 +206,67 @@ Flexbox-
   flex-direction: row | column | row-reverse | column-reverse;
   justify-content: flex-start | flex-end | center | space-between | space-around;
   align-items: flex-start | flex-end | center | baseline | stretch;
+  order: 0 / 1 / 2
 
 
+Flex child  
+  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+  justify-self: auto | flex-start | flex-end | center | baseline | stretch;
+  flex-grow: 0 / 1
+  flex-shrink: 0 / 1
+  flex-basis: auto | 0%
+  flex: 1 0 auto
 
+
+Grid
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+
+ Column Items:
+  align-items: center | start | end | flex-start | flex-end | center | baseline | stretch;
+  justify-items: center | start | end | flex-start | flex-end | center | baseline | stretch;
+
+
+Columns: 
+  align-content: center | start | end | flex-start | flex-end | center | baseline | stretch;
+  justify-content: center | start | end | flex-start | flex-end | center | baseline | stretch;
+
+
+Spanning
+  grid-column: span 2;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+
+Responsive Design
+
+  Mobile first
+  .grid-container {
+    grid-template-columns: 1fr ;
+  }
+
+
+  @media screen and (min-width: 430px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
+  Desktop first
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  } 
+
+  @media screen and (max-width: 430px) {
+    .grid-container {
+      grid-template-columns: 1fr 1fr ;
+    }
+  }
 
 
 
