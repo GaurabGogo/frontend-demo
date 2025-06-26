@@ -268,6 +268,12 @@ Responsive Design
     }
   }
 
+  linear-gradient
+  conic-gradient
+
+  box-shadow
+
+
 
 
 
