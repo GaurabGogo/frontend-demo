@@ -1,0 +1,67 @@
+Javascript
+- High Level
+- Interpreted
+- Dynamic
+- Object Oriented
+- Functional
+- Prototypal
+- Multi-paradigm
+
+Javascript is a High Level, Interpreted, Dynamic, Object Oriented, Functional, Prototypal, Multi-paradigm programming language.
+
+
+Varriables
+  - var : mutable value , global scope
+  - let : block scope
+  - const : immutable value
+  
+Data types
+  - number
+  - string
+  - boolean
+  - undefined
+  - null
+  - object
+  - array
+
+
+Operators 
+  - Arithmetic Operators
+    - + 
+    - -
+    - *
+    - /
+    - %
+    - ++
+    - --
+  - Assignment Operators
+    - =
+    - +=
+    - -=
+    - *=
+    - /=
+    - %=
+    - <<=
+    - >>=
+    - >>>=
+    - &=
+    - ^=
+    - |=
+    - ??=
+  - Comparison Operators
+    - >
+    - <
+    - >=
+    - <=
+    - ==
+    - !=
+    - ===
+    - !==
+
+
+Template Literals
+  - Template literals are enclosed by backticks (\`) and can contain placeholders.
+  - Placeholders are defined using the dollar sign ($) followed by curly braces ({}).
+  - The placeholders can be used to insert values into the template literal.
+
+  cosole.log(`Hello, ${name}!`);
