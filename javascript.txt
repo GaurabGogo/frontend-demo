@@ -65,3 +65,41 @@ Template Literals
   - The placeholders can be used to insert values into the template literal.
 
   cosole.log(`Hello, ${name}!`);
+
+Boolean Logical Operands
+
+AND -- &&
+OR -- ||
+NOT -- !
+
+
+
+Control Statements
+if
+else
+switch
+for
+while
+do while
+
+
+Ternary Operator
+
+Statement Vs Expression
+
+condition ? expression1 : expression2
+
+
+FUNCTIONS
+1. 
+    Function Declaration
+    function fnName(parameters) {
+      // function body
+      // return expression;
+    }
+
+    Function Invocation
+    name(parameters);
+
+2. Arrow Functions
+   const add = (a, b) => a + b;
