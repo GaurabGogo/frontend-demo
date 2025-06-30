@@ -82,6 +82,33 @@ for
 while
 do while
 
+for(initialization; condition; increment/decrement) {
+
+
+  for(let i = 0; i < 5; i++) {
+      console.log(i);
+  }
+
+  while (condition) {
+    // statements
+  }
+
+  do {
+    // statements
+  } while (condition);
+
+
+ for element in arr {
+    console.log(element);
+    // 7 times
+  }
+
+
+  forEach(arr, function(element) {
+    console.log(element);
+  });
+  
+
 
 Ternary Operator
 
@@ -103,3 +130,54 @@ FUNCTIONS
 
 2. Arrow Functions
    const add = (a, b) => a + b;
+
+Array
+
+1. mutable
+2. Indexing starts from 0
+     const arr = [1, 2, 3, 4, 5];
+     console.log(arr[0]); // 1
+     console.log(arr[1]); // 2
+     console.log(arr[2]); // 3
+     console.log(arr[3]); // 4
+     console.log(arr[4]); // 5
+
+     // Mutable
+     arr[0] = 10;
+     console.log(arr[0]); // 10
+     
+     // Immutable
+     const arr2 = [1, 2, 3, 4, 5];
+     arr2[0] = 10; // TypeError: Assignment to constant variable.
+3. Nested Array
+     const arr = [1, 2, [3, 4, 5]];
+     console.log(arr[2][1]); 
+
+4. Different Data Types
+     const arr = [1, 2, "three", true, false, undefined, null];
+
+
+5. Array Methods
+   - push
+   - pop
+   - shift
+   - unshift
+   - slice
+   - splice
+   - concat
+   - join
+   - reverse
+   - sort
+   - indexOf
+   - lastIndexOf
+   - includes
+   - forEach
+   - map
+   - filter
+   - reduce
+   - every
+   - some
+
+
+
+     
