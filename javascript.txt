@@ -108,7 +108,7 @@ for(initialization; condition; increment/decrement) {
     console.log(element);
   });
   
-
+l
 
 Ternary Operator
 
@@ -179,5 +179,58 @@ Array
    - some
 
 
+Objects
+1. Mutable
 
-     
+  const person = {
+    name: "John",
+    age: 30,
+    isStudent: true,
+  };
+
+  Accessing Properties
+    console.log(person.name); // John
+    console.log(person["name"]); // John
+
+Adding Properties
+    person.gender = "Male";
+    console.log(person.gender); // Male
+    console.log(person["gender"]); // Male
+ 
+Deleting Properties
+    delete person.age;
+    console.log(person.age); // undefined
+ 
+
+ DOM MAnipulation
+  
+Get Elements
+   document.getElementById("heading");
+   document.getElementsByClassName("class-heading");
+   document.getElementsByTagName("h1");
+   document.querySelectorAll(".class-heading");
+
+Get Text
+   document.getElementById("heading").textContent;
+  document.getElementsByClassName("class-heading")[0].innerHTML;
+
+Get Class
+  document.getElementsByClassName("class-heading")[0].classList;
+
+  document.getElementsByClassName("class-heading")[0].attributes;
+
+  document.getElementsByClassName("class-heading")[0].id;
+
+Class 
+
+  const btn = document.getElementsByTagName("button);
+
+  btn.classList
+
+  Methods
+    - classList.add("new-class")
+    - classList.remove("new-class")
+    - classList.toggle("new-class")
+
+
+Events
