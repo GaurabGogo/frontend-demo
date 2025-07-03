@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/1f4dd.svg"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css"
+      integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Todo-Remainder with Notification</title>
+  </head>
+  <body>
+    <!-- <button id="btn">click</button> -->
+    <header class="todo-box">
+      <h2 class="app-name">Todo-Remainder</h2>
+      <button class="sound" value="off">🔇</button>
+      <div class="add-box">
+        <button class="add-btn">Add a new task</button>
+      </div>
+    </header>
+    <main class="list-box">
+      <form class="form-box">
+        <label for="task">Enter the Task</label>
+        <textarea
+          type="textbox"
+          id="task"
+          class="task-name"
+          placeholder="Enter the task!"
+        ></textarea>
+        <div>
+          <input
+            id="remainder"
+            type="checkbox"
+            value="remainder"
+            name="remainder"
+          />
+          <label for="remainder" class="remainder">Turn on Remainder</label>
+        </div>
+        <div class="remainder-box">
+          <label for="date">Select a date:</label>
+          <input type="date" id="date" name="date" /><br />
+          <label for="time">Select a time:</label>
+          <input type="time" id="time" name="time" />
+        </div>
+
+        <div class="form-btn">
+          <button class="cancel-btn btn">Cancel</button>
+          <button type="submit" class="submit-btn btn">Add</button>
+        </div>
+      </form>
+      <div class="list-items"></div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
