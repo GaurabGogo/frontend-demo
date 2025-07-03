@@ -234,3 +234,10 @@ Class
 
 
 Events
+1. Event Listeners
+2. Event Delegation
+3. Event Bubbling
+4. Event Capturing
+5. Event Propagation
+
+
