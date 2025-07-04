@@ -164,3 +164,195 @@
 // let newNumber = 5;
 // newNumber ??= 4; // const newNumber = newNumber ?? 4;
 // console.log(newNumber);
+
+//  Looping Arrays
+
+// const menu = [5, 6, 7, 8, 9];
+
+// for (const item of menu) {
+//   console.log(item);
+// }
+
+// for (const index of menu.entries()) {
+//   console.log(index);
+// }
+
+// for (const [index, item] of menu.entries()) {
+//   console.log(index, item);
+// }
+
+// Optional Chaining (?)
+
+// const person = {
+//   name: "John",
+//   age: 30,
+//   isStudent: true,
+// };
+
+// const person = {
+//   name: {
+//     firstName: "John",
+//   },
+// };
+
+// const firstName = person?.name?.firstName;
+// console.log(firstName);
+
+// console.log(person?.name?.firstName);
+// console.log(person?.age);
+// console.log(person?.isStudent);
+
+// Looping Objects
+
+// const days = {
+//   monday: "Monday",
+//   tuesday: "Tuesday",
+//   wednesday: "Wednesday",
+//   thursday: "Thursday",
+//   friday: "Friday",
+//   saturday: "Saturday",
+//   sunday: "Sunday",
+// };
+
+// Object.keys
+
+// const properties = Object.keys(days);
+
+// for (const property of properties) {
+//   console.log(property);
+// }
+
+// Object.values
+
+// const values = Object.values(days);
+
+// for (const value of values) {
+//   console.log(value);
+// }
+
+// Object.entries
+
+// const entries = Object.entries(days);
+
+// for (const [key, value] of entries) {
+//   console.log(key, value);
+// }
+
+// Set
+
+// const orderSet = new Set(["Pizza", "Pizza", "Burger", "Pizza"]);
+
+// console.log(orderSet);
+
+// // Set.add
+
+// orderSet.add("Pizza");
+// orderSet.add("Pizza");
+// console.log(orderSet);
+
+// // Set.delete
+
+// orderSet.delete("Pizza");
+// console.log(orderSet);
+
+// // Set.has
+
+// const hasPizza = orderSet.has("Pizza");
+// console.log(hasPizza);
+
+// // Set.clear
+
+// orderSet.clear();
+// console.log(orderSet);
+
+// // Set.size
+
+// const size = orderSet.size;
+// console.log(size);
+
+// // Set.forEach
+
+// orderSet.forEach((item) => {
+//   console.log(item);
+// });
+
+// // Set.values
+
+// const values = orderSet.values();
+
+// for (const value of values) {
+//   console.log(value);
+// }
+
+// // Set.entries
+
+// const entries = orderSet.entries();
+
+// for (const [key, value] of entries) {
+//   console.log(key, value);
+// }
+
+// // Set.keys
+
+// const keys = orderSet.keys();
+
+// for (const key of keys) {
+//   console.log(key);
+// }
+
+// MAP
+// const orderMap = new Map();
+// orderMap.set("Pizza", 10);
+// orderMap.set("Burger", 20);
+// orderMap.set("Pizza", 30);
+
+// console.log(orderMap);
+
+// orderMap.set("Pizza", 40);
+// console.log(orderMap);
+
+// orderMap.delete("Pizza");
+// console.log(orderMap);
+
+// orderMap.clear();
+// console.log(orderMap);
+
+// orderMap.forEach((value, key) => {
+//   console.log(key, value);
+// });
+
+// String
+
+// const str = "Hello World";
+// console.log(str);
+// console.log(str[0]);
+// console.log(str.length);
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str.charAt(0));
+// console.log(str.charCodeAt(0));
+// console.log(str.indexOf("o"));
+// console.log(str.lastIndexOf("o"));
+// console.log(str.includes("o"));
+// console.log(str.startsWith("Hell"));
+// console.log(str.endsWith("d"));
+
+// String.split
+
+// const str = "Hello World";
+// const arr = str.split(" ");
+// console.log(arr[1]);
+
+// String.replace;
+
+// const str = "Hello World";
+// const newStr = str.replace("World", "Hi");
+// console.log(newStr);
+
+// slice
+// console.log(str.slice(0, 3));
+// console.log(str.slice(3)); // lo World
+// console.log(str.slice(-3));  // rld
+
+// sub string
+// console.log("Hello World".substring(4, 5)); // o
