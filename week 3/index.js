@@ -171,7 +171,7 @@
 
 // for (const item of menu) {
 //   console.log(item);
-// }
+// }4
 
 // for (const index of menu.entries()) {
 //   console.log(index);
@@ -356,3 +356,64 @@
 
 // sub string
 // console.log("Hello World".substring(4, 5)); // o
+
+// Array Methods
+
+// const arr = [1, 2, 3, 4, 5, 6];
+// const arr2 = [6, 7, 8];
+
+// console.log(arr.slice(0, 3));
+// console.log(arr.slice(-3));
+// console.log(arr.slice(0, 3));
+
+// arr.splice(0, 3); // Mutates original array
+// console.log(arr); // 4, 5
+
+// console.log(arr.slice(0, 1));
+
+// console.log(arr.reverse()); // Mutates original array
+// console.log(arr);
+
+// console.log(arr.concat(arr2));
+
+// console.log(arr.join("****"));
+
+// const name = ["John", "Doe", "Smith"];
+// console.log(name.join(" "));
+
+// For Each Loop
+
+// const arr = [1, 2, 3, 4, 5, 6];
+
+// arr.forEach(function (item) {
+//   console.log(item);
+// });
+
+// const arr = [1, 2, 3, 4, 5, 6]; // [2, 4, 6, 8, 10, 12]
+
+// const newArr = arr.map(function (item, index) {
+//   return item > 2;
+// });
+
+// const newArr = arr.filter((item, index) => item > 3);
+
+// console.log(newArr);
+
+// const arr = ["A", "B", "C", "D"];
+
+// const newArr = arr.reduce(function (acc, currItem, index, arr) {
+//   return acc + currItem;
+// }, "");
+
+// console.log(newArr);
+
+// Chaining Methods
+
+// const arr = [1, 2, 3, 4, 5, 6];
+
+// const newArr = arr
+//   .map((item) => item * 2) // [2, 4, 6, 8, 10, 12]
+//   .filter((item) => item > 5) // [6, 8, 10, 12]
+//   .reduce((acc, currItem) => acc + currItem, 0);
+
+// console.log(newArr);
