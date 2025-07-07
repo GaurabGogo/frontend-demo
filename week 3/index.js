@@ -48,7 +48,6 @@
 // console.log(a); // udefined
 // var a;
 
-// TODO LIST
 // createElement
 // appendChild
 // removeChild
@@ -408,12 +407,73 @@
 // console.log(newArr);
 
 // Chaining Methods
-
 // const arr = [1, 2, 3, 4, 5, 6];
 
 // const newArr = arr
 //   .map((item) => item * 2) // [2, 4, 6, 8, 10, 12]
-//   .filter((item) => item > 5) // [6, 8, 10, 12]
+//   .filter((item) => item > 2) // [4, 6, 8, 10, 12]
 //   .reduce((acc, currItem) => acc + currItem, 0);
 
+// Lexical Scope Definition
+// Lexical scope, also known as static scope, is a scoping mechanism where the accessibility of variables and functions is determined by their physical location in the source code. In essence, it means that inner functions have access to variables defined in their outer (or enclosing) functions, and this access is determined at compile time based on how the code is structured textually.
+
+// Closure
+// A closure in JavaScript is the combination of a function and the lexical environment within which that function was declared. This means that a closure gives a function access to its outer scope, even after the outer function has finished executing.
+
 // console.log(newArr);
+//  Call Apply Bind
+
+// let name = {
+//   firstname: "John",
+//   lastname: "Doe",
+//   getFullname: function (city, country) {
+//     return console.log(
+//       `${this.firstname} ${this.lastname} from ${city}, ${country}`
+//     );
+//   },
+// };
+
+// name.getFullname("New York", "USA");
+
+// let name2 = {
+//   firstname: "Marry",
+//   lastname: "Doe",
+// };
+
+// // call Method function borrowing
+// name.getFullname.call(name2, "New York", "USA");
+
+// // Apply Method
+// name.getFullname.apply(name2, ["New York", "USA"]);
+
+// // Bind Method
+// const marry = name.getFullname.bind(name2, "New York", "USA");
+
+// marry();
+
+// Flat and  Flatmap
+
+// const arr = [1, 2, 3, 4, [5, 6, [7, 8]]];
+
+// const flatArr = arr.flat(2);
+// console.log(flatArr);
+
+// const flatMapArr = arr.flatMap((item) => item * 2);
+// console.log(flatMapArr);
+
+// const flatArr = arr.flat(2);
+// const flatArrMap = flatArr.map((item) => item * 2);
+// console.log(flatArrMap);
+
+// let arr = [2, 5, 1, 7, 6];
+
+// // arr.sort();
+// arr.sort((a, b) => a - b); // normal
+// arr.sort((a, b) => b - a); //reverse
+
+// console.log(arr);
+
+// const x = new Array(7);
+// x.fill(1);
+
+// console.log(x);

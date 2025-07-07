@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.box {
+/* .box {
   height: 200px;
   width: 200px;
   background-color: green;
@@ -12,4 +12,51 @@
 
 .box.active {
   background-color: blue;
+} */
+
+.container {
+  height: 200px;
+  width: 200px;
+  background-color: green;
+  margin: 120px auto;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
+
+/* .line {
+  height: 100px;
+  width: 2px;
+  background-color: black;
+  position: relative;
+}
+
+.line::after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.line::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  border-radius: 50%;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+} */
+
+/* h2 {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  width: fit-content;
+} */
