@@ -477,3 +477,5 @@
 // x.fill(1);
 
 // console.log(x);
+
+// Some Method
