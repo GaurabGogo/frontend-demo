@@ -170,7 +170,7 @@
 
 // for (const item of menu) {
 //   console.log(item);
-// }4
+// }
 
 // for (const index of menu.entries()) {
 //   console.log(index);
@@ -215,7 +215,7 @@
 
 // Object.keys
 
-// const properties = Object.keys(days);
+// const properties = Object.keys(days); // ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
 
 // for (const property of properties) {
 //   console.log(property);
@@ -391,18 +391,40 @@
 // const arr = [1, 2, 3, 4, 5, 6]; // [2, 4, 6, 8, 10, 12]
 
 // const newArr = arr.map(function (item, index) {
-//   return item > 2;
+//   return item * 2;
+//   // return item % 2 !== 0;
 // });
-
-// const newArr = arr.filter((item, index) => item > 3);
 
 // console.log(newArr);
 
-// const arr = ["A", "B", "C", "D"];
+// const newArr = arr.filter((item, index) => item % 2 !== 0); "Priyanka" === "Priyanka"
 
-// const newArr = arr.reduce(function (acc, currItem, index, arr) {
-//   return acc + currItem;
-// }, "");
+// console.log(newArr);
+
+// const arr = [1, 2, 3, 4];
+const arr = ["A", "B", "C", "D"];
+
+const newArr = arr.reduce(function (acc, item, index) {
+  return acc + item; // "ABCD"
+}, "");
+
+console.log(newArr);
+
+//  Some And Every Method
+
+// const arr = [1, 2, 3, 4, 5, 6];
+
+// const newArr1 = arr.some((item) => item > 0);
+// const newArr2 = arr.every((item) => item > 0);
+
+// console.log(newArr1, newArr2);
+
+//  Find Method
+
+// const arr = ["Ball", "Cat", "Dog", "Apple"];
+
+// const newArr = arr.find((item) => item === "Cat");
+// const newArr = arr.indexOf((item) => item === "Cat");
 
 // console.log(newArr);
 
@@ -410,8 +432,9 @@
 // const arr = [1, 2, 3, 4, 5, 6];
 
 // const newArr = arr
-//   .map((item) => item * 2) // [2, 4, 6, 8, 10, 12]
 //   .filter((item) => item > 2) // [4, 6, 8, 10, 12]
+//   .map((item) => item * 2) // [2, 4, 6, 8, 10, 12]
+// .filter((item) => item % 2 !==0) // [4, 6, 8, 10, 12]
 //   .reduce((acc, currItem) => acc + currItem, 0);
 
 // Lexical Scope Definition
@@ -477,5 +500,3 @@
 // x.fill(1);
 
 // console.log(x);
-
-// Some Method

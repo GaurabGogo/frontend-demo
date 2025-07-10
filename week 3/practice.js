@@ -1,5 +1,7 @@
 // console.log(a);
 
+// var a = 10;
+
 // //Temporal Dead Zone
 // let a = 5;
 
@@ -54,11 +56,11 @@
 // console.log(a);
 // console.log(...rest);
 
-const person = {
-  name: "John",
-  age: 30,
-  isStudent: true,
-};
+// const person = {
+//   name: "John",
+//   age: 30,
+//   isStudent: true,
+// };
 
 // const newPerson = {
 //   ...person,
@@ -67,7 +69,39 @@ const person = {
 
 // console.log(newPerson);
 
-const { name, ...rest } = person;
+// const { name, ...rest } = person;
 
-console.log(name);
-console.log(rest);
+// console.log(name);
+// console.log(rest);
+
+// Nullish Coalescing Operator
+
+// const num = null;
+// const num2 = num ?? "hello world";
+
+// console.log(num2);
+
+// console.log(null || undefined || 0);
+// console.log(null && "hello world");
+// console.log(5 && "hello world");
+
+// console.log("Jonas");
+
+// setTimeout(function () {
+//   console.log("Hello World");
+// }, 0);
+
+// console.log("Smith");
+
+// setInterval(() => {
+//   console.log("Hello World");
+// }, 1000);
+
+// function add(a, b) {
+//   return function (c) {
+//     return a + b + c;
+//   };
+// }
+
+// const add2 = add(1, 2)(3);
+// console.log(add2);
