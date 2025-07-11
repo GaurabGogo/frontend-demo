@@ -105,3 +105,9 @@
 
 // const add2 = add(1, 2)(3);
 // console.log(add2);
+
+// const arr = [1, 2, 3, 4, 5];
+
+// const find = arr.find((num) => num > 0);
+
+// console.log(find);

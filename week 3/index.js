@@ -402,13 +402,13 @@
 // console.log(newArr);
 
 // const arr = [1, 2, 3, 4];
-const arr = ["A", "B", "C", "D"];
+// const arr = ["A", "B", "C", "D"];
 
-const newArr = arr.reduce(function (acc, item, index) {
-  return acc + item; // "ABCD"
-}, "");
+// const newArr = arr.reduce(function (acc, item, index) {
+//   return acc + item; // "ABCD"
+// }, "");
 
-console.log(newArr);
+// console.log(newArr);
 
 //  Some And Every Method
 
@@ -500,3 +500,58 @@ console.log(newArr);
 // x.fill(1);
 
 // console.log(x);
+
+// Casting (Type Conversion)
+
+// const num = "10";
+// console.log(2 + num); // string
+// console.log(Number(num));
+// console.log(2 + +num); // 12
+
+// const string = 10;
+// console.log(String(string));
+
+// Parsing
+
+// console.log(Number.parseInt("10px") + 2); // 12
+// console.log(Number.parseFloat("2.5rem")); // 2.5
+
+// console.log(Number.isInteger(num));
+// console.log(Number.isFinite(23 / 0));
+
+//  MATH Methods
+
+// console.log(Math.sqrt(25)); // 5
+// console.log(Math.max(5, 10, 15));
+// console.log(Math.min(5, 10, 15));
+
+// console.log(Math.PI);
+// console.log(Math.E);
+// console.log(Number.parseInt(Math.random() * 10)); // Float -> Int
+// console.log(Math.trunc(Math.random() * 10)); // 23.7 -> 23
+// console.log(Math.round(Math.random() * 10)); // 23.5 -> 24
+// console.log(Math.ceil(23.4));
+// console.log(Math.floor(23.4));
+
+// console.log(Math.abs(-10));
+// console.log((24.1236).toFixed(2)); // 24.12
+
+// Dates
+
+// console.log(new Date());
+
+// const date = new Date();
+// console.log(date.getDate());
+// console.log(date.getMonth()); // Caution 0 - 11
+// console.log(date.getFullYear());
+// console.log(date.getHours());
+// console.log(date.getMinutes());
+// console.log(date.getSeconds());
+// console.log(date.getMilliseconds());
+
+// console.log(date.toLocaleString());
+// console.log(date.toISOString());
+
+// const date2 = new Intl.DateTimeFormat("en-NP").format(date);
+
+// console.log(date2);
