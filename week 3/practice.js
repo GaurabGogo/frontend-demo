@@ -111,3 +111,14 @@
 // const find = arr.find((num) => num > 0);
 
 // console.log(find);
+
+// const item = document.querySelector("#item");
+// item.before((document.createElement("p").innerHTML = "Hello World"));
+// item.remove();
+
+const h1 = document.querySelectorAll("h1");
+
+// console.log(h1[0].firstElementChild);
+// console.log(h1[0].firstChild);
+
+console.log(h1[0].closest(".container"));
