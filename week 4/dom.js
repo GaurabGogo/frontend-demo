@@ -61,7 +61,7 @@
 // const h1 = document.querySelector("h1");
 // h1.style.backgroundColor = "red";
 // h1.style.fontFamily = "Arial";
-// h1.style.fontSize = "20px";
+// h1.style.fontSize = "30px";
 // h1.style.color = "white";
 // h1.style.setProperty("background-color", "blue");
 
@@ -73,7 +73,7 @@
 // console.log(h1.dataset.id); // getAttribute
 // console.log(h1.getAttribute("id")); // getAttribute
 
-// h1.setAttribute("data-id2", "heading");
+// h1.setAttribute("id", "heading2");
 
 // ClassList
 
@@ -81,6 +81,7 @@
 // h2.classList.add("active");
 // h2.classList.remove("active");
 // h2.classList.toggle("active");
+
 // const result = h2.classList.contains("active");
 // console.log(h2.classList); // getClassList
 // console.log(result);
@@ -91,3 +92,31 @@
 // const bodyHeight = body.clientHeight;
 // const bodyWidth = body.clientWidth;
 // console.log(rect, bodyHeight, bodyWidth);
+
+// DOM Travesing
+
+// Parent -> Child
+// const parent = document.querySelector("h1");
+
+// console.log(parent.childNodes);
+// console.log(parent.children);
+// console.log(parent.firstElementChild);
+// console.log(parent.lastElementChild);
+
+// Child -> Parent
+// const span = document.querySelector("#inner-span");
+// console.log(span.parentElement);
+// console.log(span.parentNode);
+// const parent = span.closest("#heading");
+// console.log(parent);
+
+// const html = document.documentElement;
+// console.log(html.parentNode);
+
+// Next Sibling
+// const prevSibling = span.previousElementSibling;
+// console.log(prevSibling);
+
+// console.log(span.nextElementSibling);
+// console.log(span.nextSibling);
+// console.log(span.previousSibling);
