@@ -274,7 +274,7 @@ Responsive Design
   box-shadow
 
 
-
+event bubbling VS capturing Vs deligation
 
 
 
