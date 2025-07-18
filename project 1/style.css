@@ -18,6 +18,13 @@ body {
   margin: 0 auto;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
 .btn {
   border: 0px;
   outline: none;
@@ -60,6 +67,15 @@ body {
 
 .rounded-btn {
   border-radius: 10px;
+}
+
+select {
+  padding: 10px 20px;
+  font-size: 24px;
+}
+
+select option {
+  font-size: 16px;
 }
 
 /* Header Styles */
@@ -110,11 +126,9 @@ nav {
 
 /* Section 1 Styles */
 
-.section-1 {
-}
-
-.section-1__content {
-  padding: 24px 0;
+.section-1__content,
+.section-2__content {
+  padding: 24px;
 }
 
 .section-1__content img {
@@ -123,4 +137,47 @@ nav {
   object-fit: cover;
   overflow: hidden;
   border-radius: 20px;
+}
+
+/* Products Card Styles */
+
+.products__list {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.01);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+.product-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
