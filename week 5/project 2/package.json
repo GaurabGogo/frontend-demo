@@ -1,0 +1,22 @@
+{
+  "name": "velocis",
+  "version": "1.0.0",
+  "description": "This project belongs to velocis core",
+  "keywords": [
+    "Perosnal"
+  ],
+  "license": "ISC",
+  "author": "gaurab",
+  "type": "module",
+  "scripts": {
+    "test": "parcel index.html",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "lucide": "^0.525.0",
+    "parcel": "^2.15.4",
+    "tailwindcss": "^4.1.11"
+  }
+}

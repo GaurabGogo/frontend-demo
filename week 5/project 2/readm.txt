@@ -1,0 +1,20 @@
+npm init
+
+npm i lucide parcel tailwindcss
+
+touch index.html
+touch index.css
+touch index.js
+
+
+package module
+
+
+scripts
+  "test": "parcel index.html",
+  "dev": "parcel index.html",
+  "build": "parcel build index.html"
+
+node_modules
+
+package.json share only other can run the project
