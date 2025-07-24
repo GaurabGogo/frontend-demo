@@ -1,9 +1,10 @@
 import { Search } from "lucide-react";
 import { useEffect, useState } from "react";
-import Spinner from "react-spinner";
+import LoadingSpinner from "./LoadingSpinner";
 import ProductCard from "./ProductCard";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+  const { selectedId, setSelectedId } = props;
   const [recipes, setRecipes] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [loading, setLoading] = useState(true);
@@ -11,15 +12,19 @@ const Sidebar = () => {
   useEffect(() => {
     setLoading(true);
 
-    try {
+    const timer = setTimeout(() => {
       fetch(`https://dummyjson.com/recipes/search?q=${searchText}`)
         .then((res) => res.json())
-        .then((data) => setRecipes(data.recipes));
-    } catch (error) {
-      console.log(error);
-    } finally {
-      setLoading(false);
-    }
+        .then((data) => setRecipes(data.recipes))
+        .catch((error) => {
+          console.error(error);
+        })
+        .finally(() => {
+          setLoading(false);
+        });
+    }, 3000);
+
+    return () => clearTimeout(timer);
   }, [searchText]);
 
   return (
@@ -39,12 +44,17 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="recipes-list">
-        {loading && <Spinner visible={loading} />}
-
+        <LoadingSpinner loading={loading} />
         {!loading &&
           recipes.length > 0 &&
           recipes.map((item, index) => {
-            return <ProductCard recipe={item} />;
+            return (
+              <ProductCard
+                recipe={item}
+                selectedId={selectedId}
+                setSelectedId={setSelectedId}
+              />
+            );
           })}
         {!loading && recipes.length === 0 && (
           <div className="empty-results">No recipes found</div>
