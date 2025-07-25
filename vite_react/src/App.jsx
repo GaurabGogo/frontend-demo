@@ -1,18 +1,19 @@
-import { useState } from "react";
 import MainContent from "./components/MainContent";
 import Sidebar from "./components/Sidebar";
-import "./index.css";
+import { RecipeIdProvider } from "./contexts/RecipeProvider";
+import "./styles/index.css";
 
 const App = () => {
-  const [selectedId, setSelectedId] = useState(null);
-
-  console.log("selectedId", selectedId);
-
   return (
-    <main className="main">
-      <Sidebar selectedId={selectedId} setSelectedId={setSelectedId} />
-      <MainContent selectedId={selectedId} />
-    </main>
+    <RecipeIdProvider>
+      <main className="main">
+        <Sidebar />
+        <MainContent />
+        {/* <TempContent>
+        <h2>Hello From Main APP</h2>
+      </TempContent> */}
+      </main>
+    </RecipeIdProvider>
   );
 };
 

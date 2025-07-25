@@ -1,29 +1,26 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
+import { RecipeIdContext } from "../contexts/RecipeIdContext";
+import useFetch from "../hooks/useFetch";
+import LoadingSpinner from "./LoadingSpinner";
 
-const MainContent = (props) => {
-  const { selectedId } = props;
-  const [recipe, setRecipe] = useState({});
-  const [loading, setLoading] = useState(true);
+const MainContent = () => {
+  const { selectedId, setSelectedId } = useContext(RecipeIdContext);
 
-  const fetchRecipeById = async (id) => {
-    setLoading(true);
-    try {
-      const response = await axios.get(`https://dummyjson.com/recipes/${id}`);
-      setRecipe(response.data);
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  const {
+    loading,
+    data: recipe,
+    error,
+    refetch,
+  } = useFetch(`https://dummyjson.com/recipes/${selectedId}`);
 
   useEffect(() => {
-    fetchRecipeById(selectedId);
+    refetch();
   }, [selectedId]);
 
   return (
     <div id="main-content">
+      <LoadingSpinner loading={loading} />
+
       {!selectedId && (
         <div className="initial-content">
           Begin By Searching or Selecting Your First Recipe
